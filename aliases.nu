@@ -1,0 +1,2 @@
+export alias vi = nvim
+
