@@ -536,3 +536,4 @@ let-env config = {
 }
 
 use aliases.nu *
+
