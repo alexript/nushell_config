@@ -535,5 +535,6 @@ let-env config = {
   ]
 }
 
-use aliases.nu *
+source aliases.nu 
+source ohmyposh.nu
 
