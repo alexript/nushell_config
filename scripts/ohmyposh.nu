@@ -16,7 +16,8 @@ let-env PROMPT_COMMAND = { ||
 let cmd_duration = if $env.CMD_DURATION_MS == "0823" { 0 } else { $env.CMD_DURATION_MS }
 # hack to set the cursor line to 1 when the user clears the screen
 # this obviously isn't bulletproof, but it's a start
-let clear = (history | last 1 | get 0.command) == "clear"
+let clear = true
+#let clear = (history | last 1 | get 0.command) == "clear"
 let width = ((term size).columns | into string)
 ^"oh-my-posh" print primary $"--config=($env.POSH_THEME)" --shell=nu $"--shell-version=($env.POSH_SHELL_VERSION)" $"--execution-time=($cmd_duration)" $"--error=($env.LAST_EXIT_CODE)" $"--terminal-width=($width)" $"--cleared=($clear)"
 }
