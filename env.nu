@@ -38,3 +38,8 @@ let-env NU_PLUGIN_DIRS = [
 load-env {
  'FZF_DEFAULT_OPTS':  "--height 80% --layout=reverse --border --inline-info --preview 'cat {}' --color 'fg:#bbccdd,fg+:#ddeeff,bg:#334455,preview-bg:#223344,border:#778899'",
 }
+
+#let localenv = ($nu.config-path|path dirname| path join  'local.env')
+#if ($localenv|path exists) {
+#        open $localenv | lines | parse "{var} = {val}" |str trim 
+#    }
