@@ -538,3 +538,4 @@ let-env config = {
 source aliases.nu 
 source ohmyposh.nu
 
+use git-completions.nu *
