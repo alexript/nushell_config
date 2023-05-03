@@ -538,4 +538,6 @@ let-env config = {
 source aliases.nu 
 source ohmyposh.nu
 
+# scripts from https://github.com/nushell/nu_scripts
 use git-completions.nu *
+use cargo-completions.nu *
