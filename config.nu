@@ -535,6 +535,7 @@ let-env config = {
   ]
 }
 
+source is-installed.nu
 source aliases.nu 
 source ohmyposh.nu
 
