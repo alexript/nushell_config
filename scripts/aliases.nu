@@ -5,3 +5,5 @@ alias conf = cd ($nu.config-path | path dirname )
 alias lua = lua54
 alias luac = luac54
 alias wlua = wlua54
+
+alias wiki = wiki-tui
