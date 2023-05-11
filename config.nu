@@ -542,4 +542,7 @@ source ohmyposh.nu
 # scripts from https://github.com/nushell/nu_scripts
 use git-completions.nu *
 use cargo-completions.nu *
+# --
+
 source direnv.nu
+source gorss.nu

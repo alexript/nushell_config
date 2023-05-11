@@ -1,2 +1,6 @@
 history.txt
 local.env
+bin_portable/*.exe
+bin_portable/*.dll
+configs/gorss/*.db
+configs/gorss/opml.xml

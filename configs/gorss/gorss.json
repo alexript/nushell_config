@@ -1,0 +1,54 @@
+{
+    "highlights": [
+        "gorss",
+        "doit"
+    ],
+    "OPMLFile": "opml.xml",
+    "feeds": [
+        "https://news.ycombinator.com/rss",
+        {
+            "url": "https://www.reddit.com/r/golang/.rss"
+        },
+        {
+            "url": "https://www.reddit.com/r/programming/.rss"
+        }
+    ],
+    "feedWindowSizeRatio": 2,
+    "articlePreviewWindowSizeRatio": 5,
+    "articleWindowSizeRatio": 1,
+    "previewWindowSizeRatio": 3,
+    "daysToKeepDeletedArticlesInDB": 11,
+    "daysToKeepReadArticlesInDB": 11,
+    "skipArticlesOlderThanDays": 10,
+    "secondsBetweenUpdates": 300,
+    "skipPreviewInTab": false,
+    "keyOpenLink": "Ctrl+O",
+    "keyMarkLink": "Ctrl+M",
+    "keyOpenMarked": "o",
+    "keyDeleteArticle": "d",
+    "keyMoveDown": "j",
+    "keyMoveUp": "k",
+    "keyFeedDown": "J",
+    "keyFeedUp": "K",
+    "keySortByDate": "r",
+    "keySortByUnread": "e",
+    "keySortByTitle": "t",
+    "keySortByFeed": "y",
+    "keyUpdateFeeds": "Ctrl+U",
+    "keyMarkAllRead": "Ctrl+R",
+    "keyMarkAllUnread": "Ctrl+T",
+    "keyMarkAllReadFeed": "Ctrl+F",
+    "keyMarkAllUnreadFeed": "Ctrl+G",
+    "keyTogglePreview": "Ctrl+W",
+    "keySelectFeedWindow": "1",
+    "keySelectArticleWindow": "2",
+    "keySelectPreviewWindow": "3",
+    "keyToggleHelp": "h",
+    "keySwitchWindows": "Tab",
+    "keyQuit": "q",
+    "keyUndoLastRead": "u",
+    "keySearchPromt": "/",
+    "notifications": false,
+    "customCommands": [
+    ]
+}
