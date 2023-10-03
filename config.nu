@@ -535,6 +535,7 @@ $env.config = {
   ]
 }
 
+
 source is-installed.nu
 source aliases.nu 
 source ohmyposh.nu
@@ -542,7 +543,9 @@ source ohmyposh.nu
 # scripts from https://github.com/nushell/nu_scripts
 use git-completions.nu *
 use cargo-completions.nu *
+use winget-completions.nu *
 # --
 
 source direnv.nu
 source gorss.nu
+
