@@ -543,7 +543,13 @@ source ohmyposh.nu
 # scripts from https://github.com/nushell/nu_scripts
 use git-completions.nu *
 use cargo-completions.nu *
-use winget-completions.nu *
+
+if $nu.os-info.family == 'windows' {
+ use winget-completions.nu *
+} else {
+
+}
+
 # --
 
 source direnv.nu
