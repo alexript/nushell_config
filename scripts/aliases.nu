@@ -7,3 +7,5 @@ alias luac = luac54
 alias wlua = wlua54
 
 alias wiki = wiki-tui
+
+alias whereis = which
