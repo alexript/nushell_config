@@ -9,3 +9,4 @@ alias wlua = wlua54
 alias wiki = wiki-tui
 
 alias whereis = which
+alias irc = weechat
