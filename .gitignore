@@ -1,5 +1,6 @@
 history.txt
 local.env
+local.path
 bin_portable/*.exe
 bin_portable/*.dll
 configs/gorss/*.db
