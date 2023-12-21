@@ -55,6 +55,10 @@ load-env {
  'FZF_DEFAULT_OPTS':  "--height 80% --layout=reverse --border --inline-info --preview 'cat {}' --color 'fg:#bbccdd,fg+:#ddeeff,bg:#334455,preview-bg:#223344,border:#778899'",
 }
 
+$env.localenvfile = ( $nu.config-path|path dirname | path join  'local.env' )
+if ($env.localenvfile | path exists) {
+  load-env  ( $env.localenvfile | open | lines | parse -r '(?P<k>.+?)=(?P<v>.+)' | reduce -f {} {|x, acc| $acc | upsert $x.k $x.v} ) 
+}
 
 
 #let localenv = ($nu.config-path|path dirname| path join  'local.env')
