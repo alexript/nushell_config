@@ -40,13 +40,13 @@ $env.localpathfile = ($nu.config-path|path dirname| path join  'local.path')
 if ($nu.os-info.family == 'windows') and ("Path" in $env) {
  $env.Path = ($env.Path | split row (char esep) | prepend ($nu.config-path|path dirname| path join  'bin_portable'))
  if ($env.localpathfile | path exists) {
-    $env.Path = ($env.Path | split row (char esep) | append ( open $env.localpathfile | lines | str trim ))
+    $env.Path = ($env.Path | split row (char esep) | prepend ( open $env.localpathfile | lines | str trim ))
  }
 
 } else {
  $env.PATH = ($env.PATH | split row (char esep) | prepend ($nu.config-path|path dirname| path join  'bin_portable'))
  if ($env.localpathfile | path exists) {
-    $env.PATH = ($env.PATH | split row (char esep) | append ( open $env.localpathfile | lines |str trim ))
+    $env.PATH = ($env.PATH | split row (char esep) | prepend ( open $env.localpathfile | lines |str trim ))
  }
 
 }
