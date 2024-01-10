@@ -542,7 +542,7 @@ use git-completions.nu *
 use cargo-completions.nu *
 
 if $nu.os-info.family == 'windows' {
- use winget-completions.nu *
+# use winget-completions.nu *
 } else {
 
 }
