@@ -52,7 +52,7 @@ if ($nu.os-info.family == 'windows') and ("Path" in $env) {
 }
 
 load-env {
- 'FZF_DEFAULT_OPTS':  "--height 80% --layout=reverse --border --inline-info --preview 'cat {}' --color 'fg:#bbccdd,fg+:#ddeeff,bg:#334455,preview-bg:#223344,border:#778899'",
+ 'FZF_DEFAULT_OPTS':  "--height 80% --layout=reverse --border --inline-info --preview 'cat {}' --color 'bg+:#363a4f,bg:#24273a,spinner:#f4dbd6,hl:#ed8796,fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6,marker:#f4dbd6,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796'",
 }
 
 $env.localenvfile = ( $nu.config-path|path dirname | path join  'local.env' )
