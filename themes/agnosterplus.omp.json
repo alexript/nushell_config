@@ -9,7 +9,7 @@
             "cache_duration": "none",
             "time_format": "15:04:05"
           },
-          "template": " {{ .CurrentDate | date .Format }} ",
+          "template": " {{ dateInZone \"15:04Z\" .CurrentDate \"UTC\" | date .Format }} ",
           "foreground": "#007ACC",
           "type": "time",
           "style": "plain"
