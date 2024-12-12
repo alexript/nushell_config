@@ -536,7 +536,6 @@ $env.config = {
   ]
 }
 
-
 source is-installed.nu
 source aliases.nu 
 source ohmyposh.nu
@@ -553,7 +552,7 @@ source nu_scripts/custom-completions/godoc/godoc-completions.nu
 source nu_scripts/custom-completions/rustup/rustup-completions.nu
 source nu_scripts/custom-completions/tar/tar-completions.nu
 
-if $nu.os-info.family == 'windows' {
+if ($nu.os-info.family == 'windows') {
 # use winget-completions.nu *
     source nu_scripts/custom-completions/winget/winget-completions.nu
 } else {
