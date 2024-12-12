@@ -541,9 +541,7 @@ source aliases.nu
 source ohmyposh.nu
 
 # scripts from https://github.com/nushell/nu_scripts
-#use git-completions.nu *
 source nu_scripts/custom-completions/git/git-completions.nu
-#use cargo-completions.nu *
 source nu_scripts/custom-completions/cargo/cargo-completions.nu
 source nu_scripts/custom-completions/cargo-make/cargo-make-completions.nu
 source nu_scripts/custom-completions/mvn/mvn-completions.nu 
@@ -551,13 +549,7 @@ source nu_scripts/custom-completions/curl/curl-completions.nu
 source nu_scripts/custom-completions/godoc/godoc-completions.nu
 source nu_scripts/custom-completions/rustup/rustup-completions.nu
 source nu_scripts/custom-completions/tar/tar-completions.nu
-
-if ($nu.os-info.family == 'windows') {
-# use winget-completions.nu *
-    source nu_scripts/custom-completions/winget/winget-completions.nu
-} else {
-
-}
+source nu_scripts/custom-completions/winget/winget-completions.nu
 
 # --
 
