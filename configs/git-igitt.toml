@@ -8,6 +8,7 @@ persistence = [
     '^release.*$',
     '^hotfix.*$',
     '^bugfix.*$',
+    '^iss/.*$',
 ]
 
 # RegEx patterns for visual ordering of branches, from left to right.
@@ -47,6 +48,10 @@ matches = [
         [
         '^(bugfix|hotfix).*$',
         ['bright_red'],
+    ],
+        [
+        '^iss/.*$',
+        ['bright_yellow'],
     ],
     [
         '^tags/.*$',
