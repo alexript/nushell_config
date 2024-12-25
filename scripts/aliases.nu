@@ -12,3 +12,4 @@ alias whereis = which
 alias irc = weechat
 alias mutt = neomutt
 alias mail = neomutt
+

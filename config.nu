@@ -555,4 +555,5 @@ source nu_scripts/custom-completions/winget/winget-completions.nu
 
 # source direnv.nu
 source gorss.nu
+source igit.nu
 
