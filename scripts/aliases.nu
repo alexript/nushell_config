@@ -13,3 +13,6 @@ alias irc = weechat
 alias mutt = neomutt
 alias mail = neomutt
 
+def 'gh-' [ ] { 
+   gh dash -c ($nu.config-path | path dirname | path join 'configs/gh-dash.yaml')
+}
